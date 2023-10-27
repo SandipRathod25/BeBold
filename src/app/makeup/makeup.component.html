@@ -1,0 +1,65 @@
+<div class="shop">
+    <div class="shop-content">
+        <div class="title1">
+            <p>Home/Makeup</p>
+        </div>
+        <div class="title2">
+            <p>Makeup</p>
+        </div>
+        <div class="showing">
+            <div class="first">
+                <p>Showing all 4 products</p>
+            </div>
+            <div class="second">
+                <select>
+                    <option value="">Default sorting</option>
+                    <option value="">Sort by popularity</option>
+                    <option value="">Sort by average price</option>
+                    <option value="">Sort by latest</option>
+                    <option value="">Sort by price:low to high</option>
+                    <option value="">Sort by price:high to low</option>
+                </select>
+            </div>
+        </div>
+        <!-- hello -->
+
+        <div class="trending">
+            <div class="trending-content">
+                <div class="cards">
+                    <div class="card" *ngFor="let makeup of makeupData">
+                        <div class="top">
+                            <div class="sale">
+                                <p>sale!</p>
+                            </div>
+                            <div class="cart">
+                                <img src="../../assets/shopping_bag_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                            </div>
+                            <div class="image">
+                                <a routerLink="/details/{{makeup.id}}"><img src={{makeup.img}}></a>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class="name">{{makeup.name}}</div>
+                            <div class="price">
+                                <p>{{makeup.price1}}</p>
+                                <p>{{makeup.price2}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- end -->
+
+
+    </div>
+</div>

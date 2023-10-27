@@ -1,0 +1,108 @@
+.dialog {
+    width: 100%;
+
+    .dialog-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .first {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(217, 211, 211);
+                padding: 10px 20px 0 20px;
+
+                .title {
+                    font-size: 16px;
+                }
+
+                .icon {
+                    img {
+                        height: 12px;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .second {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;
+
+                .image {
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                .content {
+                    font-size: 14px;
+
+                    .price {
+                        opacity: 0.5;
+                    }
+                }
+
+                .delete {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        transition: 0.2s ease;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .text {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(234, 228, 228);
+                border-top: 1px solid rgb(231, 226, 226);
+
+                p {
+                    margin-top: 10px;
+                    padding: 0 20px;
+                }
+            }
+
+            .btns {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 20px;
+
+                button {
+                    border: none;
+                    width: 100%;
+                    padding: 12px 0;
+                    background-color: black;
+                    color: white;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

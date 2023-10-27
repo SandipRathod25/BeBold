@@ -1,0 +1,154 @@
+{
+  "all-products": [
+    {
+      "img": "../../assets/card1.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 1
+    },
+    {
+      "img": "../../assets/card2.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 2
+    },
+    {
+      "img": "../../assets/card3.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 3
+    },
+    {
+      "img": "../../assets/card4.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 4
+    },
+    {
+      "img": "../../assets/shop2.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 5
+    },
+    {
+      "img": "../../assets/shop3.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 6
+    },
+    {
+      "img": "../../assets/shop4.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 7
+    },
+    {
+      "img": "../../assets/shop5.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 8
+    },
+    {
+      "img": "../../assets/shop6.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 9
+    },
+    {
+      "img": "../../assets/shop7.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 10
+    },
+    {
+      "img": "../../assets/shop8.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 11
+    },
+    {
+      "img": "../../assets/skin1.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 12
+    },
+    {
+      "img": "../../assets/skin2.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 13
+    },
+    {
+      "img": "../../assets/skin3.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 14
+    },
+    {
+      "img": "../../assets/skin4.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 15
+    },
+    {
+      "img": "../../assets/skin5.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 16
+    },
+    {
+      "img": "../../assets/hair1.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 17
+    },
+    {
+      "img": "../../assets/hair2.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 18
+    },
+    {
+      "img": "../../assets/hair3.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 19
+    },
+    {
+      "img": "../../assets/hair4.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 20
+    }
+  ],
+  "cart": [
+    {
+      "img": "../../assets/card3.jpg",
+      "price1": 570,
+      "price2": 250,
+      "name": "Bootle of glass",
+      "id": 3,
+      "quantity": 2
+    }
+  ]
+}

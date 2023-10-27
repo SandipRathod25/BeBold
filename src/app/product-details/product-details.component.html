@@ -1,0 +1,158 @@
+<div class="details">
+    <div class="details-content" *ngIf="productData">
+        <div class="left">
+            <div class="main-img">
+                <img src={{productData.img}} alt="">
+                <div class="icon1">
+                    <p>sale!</p>
+                </div>
+                <div class="icon2">
+                    <img src="../../assets/search.png" alt="">
+                </div>
+            </div>
+            <div class="sub-img">
+                <div class="one">
+                    <img src="../../assets/pp1.jpg" alt="">
+                </div>
+                <div class="two">
+                    <img src="../../assets/pp2.jpg" alt="">
+                </div>
+                <div class="three">
+                    <img src="../../assets/pp3.jpg" alt="">
+                </div>
+                <div class="four">
+                    <img src="../../assets/pp4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="text">
+                <p style="font-size: 15px;">Home / Hair Care / {{productData.name}}</p>
+                <p>Hair Care</p>
+                <p class="title">{{productData.name}}</p>
+                <p><span
+                        style="color: #a09c9c; font-size:24px;text-decoration: line-through;">{{productData.price1}}</span><span
+                        style="color: black; font-size:24px;font-weight: bold;">
+                        {{productData.price2}}</span> & Free Shipping
+                </p>
+                <p style="line-height: 27px;">Ut quis sollicitudin orci. Aliquam at libero non purus sodales sagittis eu
+                    ac neque. Nunc ipsum
+                    felis,
+                    vehicula eu aliquam sed, ultricies ac lacus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere cubilia curae; Nam viverra commodo finibus. Morbi laoreet lacus quis lobortis
+                    tempor.
+                    Nam tincidunt, lectus a suscipit fringilla, mauris turpis dapibus dolor, eu venenatis diam nibh id
+                    massa.</p>
+                <p style="line-height: 27px;">Nulla eget tortor ultrices, ultricies turpis a, accumsan turpis. Quisque
+                    dignissim semper leo ac
+                    accumsan. Quisque est nisl, bibendum ut elit quis, pellentesque vehicula tellus. Sed luctus mattis
+                    ante
+                    ac posuere.</p>
+            </div>
+            <div class="quantity">
+                <div class="count">
+                    <button (click)="handleQuantity('min')">-</button>
+                    <input type="text" value={{productQuantity}}>
+                    <button (click)="handleQuantity('max')">+</button>
+                </div>
+                <div class="btn">
+                    <a routerLink="" (click)="addToCart()"> <button>ADD TO
+                            CART</button></a>
+                </div>
+            </div>
+            <hr>
+            <div class="category">
+                <p>Category: Hair Care</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  -->
+<div class="more">
+    <div class="more-content">
+        <div class="toggles">
+            <div class="desc">
+                <p>Description</p>
+            </div>
+            <div class="review">
+                <p> Reviews (0)</p>
+            </div>
+        </div>
+        <div class="more-text">
+            <p>More about the product</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac massa eget urna tempor vehicula
+                vel id nisi. Pellentesque sed felis auctor, molestie lectus vitae, elementum orci. In et nunc consequat,
+                semper tellus eget, euismod quam.</p>
+        </div>
+        <div class="cover">
+            <div class="cover-content">
+                <div class="image">
+                    <img src="../../assets/bg-04.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="one">
+                        <p>NUNC SED JUSTO</p>
+                    </div>
+                    <div class="three">
+                        <p>Cras vehicula semper ex, et fermentum tortor varius eget interdum et malesuada fames ac ante
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+        <div class="feature">
+            <div class="features">
+                <p>Product's Features</p>
+                <hr>
+            </div>
+            <div class="epsum">
+                <div class="up">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis.</p>
+                </div>
+                <div class="down">
+                    <div class="nuc bor">
+                        <img src="../../assets/circle.png" alt="">
+                        <p>Nunc sed justo at nisi commodo varius</p>
+                    </div>
+                    <div class="nuc bor">
+                        <img src="../../assets/circle.png" alt="">
+                        <p>Ut eu urna enim. Curabitur posuere fermentum</p>
+                    </div>
+                    <div class="nuc">
+                        <img src="../../assets/circle.png" alt="">
+                        <p>Curabitur at orci nec urna aliquet porta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="hero-content">
+            <div class="bg-image">
+                <img src="../../assets/bg-07.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="top">
+                    <div class="new">
+                        <p>LOREM IPSUM DOLOR</p>
+                    </div>
+                    <div class="collection">
+                        <p>Nam bibendum augue pharetra ultrices.</p>
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <p>Ut eu urna enim. Curabitur posuere fermentum libero, pretium dignissim est lacinia nec.
+                            Aenean dapibus ante sed pharetra scelerisque.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  -->
+<app-related></app-related>

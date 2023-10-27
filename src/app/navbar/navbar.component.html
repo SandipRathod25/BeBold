@@ -1,0 +1,40 @@
+<div class="navbar">
+    <div class="navbar-content">
+        <div class="right" (click)="menuBar = true">
+            <a routerLink=""><img src="../../assets/logo-regular.png" alt="be-bold"></a>
+        </div>
+        <div class="center">
+            <a routerLink="/shop">SHOP ALL</a>
+            <a routerLink="/makeup">MAKEUP</a>
+            <a routerLink="/skin">SKIN CARE</a>
+            <a routerLink="/hair">HAIR CARE</a>
+            <a routerLink="/about">ABOUT</a>
+            <a routerLink="/contact">CONTACT</a>
+        </div>
+        <div class="left">
+            <div class="profile">
+                <img src="../../assets/person_FILL1_wght400_GRAD0_opsz24.png" alt="profile">
+            </div>
+            <div class="price">
+                <span>{{price | currency}}</span>
+            </div>
+            <div class="cart" (click)="openDialog()">
+                <img src="../../assets/shopping_bag_FILL1_wght400_GRAD0_opsz24.png" alt="shopping-bag">
+                <div class="count">{{productCount}}</div>
+            </div>
+            <div class="menu">
+                <img src="../../assets/menu.png" alt="" *ngIf="menuBar===true" (click)="toggleMenubar()">
+                <img src="../../assets/close.png" alt="" *ngIf="menuBar===false" (click)="toggleMenubar()">
+            </div>
+        </div>
+    </div>
+    <div class="center fruit" *ngIf="menuBar===false">
+        <a routerLink="/shop" (click)="toggleMenubar()">SHOP ALL</a>
+        <a routerLink="/makeup" (click)="toggleMenubar()">MAKEUP</a>
+        <a routerLink="/skin" (click)="toggleMenubar()">SKIN CARE</a>
+        <a routerLink="/hair" (click)="toggleMenubar()">HAIR CARE</a>
+        <a routerLink="/about" (click)="toggleMenubar()">ABOUT</a>
+        <a routerLink="/contact" (click)="toggleMenubar()">CONTACT</a>
+    </div>
+</div>
+<router-outlet></router-outlet>

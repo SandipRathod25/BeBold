@@ -1,0 +1,65 @@
+<div class="shop">
+    <div class="shop-content">
+        <div class="title1">
+            <p>Home/Skin Care</p>
+        </div>
+        <div class="title2">
+            <p>Skin Care</p>
+        </div>
+        <div class="showing">
+            <div class="first">
+                <p>Showing 1-8 of 13 results</p>
+            </div>
+            <div class="second">
+                <select>
+                    <option value="">Default sorting</option>
+                    <option value="">Sort by popularity</option>
+                    <option value="">Sort by average price</option>
+                    <option value="">Sort by latest</option>
+                    <option value="">Sort by price:low to high</option>
+                    <option value="">Sort by price:high to low</option>
+                </select>
+            </div>
+        </div>
+        <!-- hello -->
+
+        <div class="trending">
+            <div class="trending-content">
+                <div class="cards">
+                    <div class="card" *ngFor="let product of products">
+                        <div class="top">
+                            <div class="sale">
+                                <p>sale!</p>
+                            </div>
+                            <div class="cart">
+                                <img src="../../assets/shopping_bag_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                            </div>
+                            <div class="image">
+                                <a routerLink="/details/{{product.id}}"><img src={{product.img}}></a>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class="name">{{product.name}}</div>
+                            <div class="price">
+                                <p>{{product.price1}}</p>
+                                <p>{{product.price2}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="loading">
+                <button class="loadmore" (click)="lessProducts()"><img src="../../assets/left.png" alt=""></button>
+                <button class="loadmore" (click)="loadProducts()"><img src="../../assets/right.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+</div>

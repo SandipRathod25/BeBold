@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+.about {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Marcellus', serif;
+
+    .about-content {
+        width: 100%;
+        position: relative;
+
+        .image {
+
+            img {
+                width: 100%;
+                height: 68vh;
+            }
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 7%;
+            transform: translate(-9%, -50%);
+            color: white;
+
+            :nth-child(1) {
+                font-size: 13px;
+            }
+
+            :nth-child(2) {
+                font-size: 63px;
+            }
+        }
+    }
+}
+
+// 
+.contact {
+    width: 100%;
+    margin: 0 auto;
+
+    .contact-content {
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        margin: 0 auto;
+
+        @media(max-width:768px) {
+            flex-direction: column;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 50%;
+            padding: 0 30px;
+
+            @media(max-width:768px) {
+                width: 100%;
+                margin-top: 50px;
+                padding: 0 10px;
+            }
+
+            .title {
+                font-size: 43px;
+                font-family: 'Marcellus', serif;
+            }
+
+            .sub {
+                font-family: 'Open Sans', sans-serif;
+                max-width: 370px;
+
+                @media(max-width:768px) {
+                    max-width: 100%;
+                }
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 18px;
+
+                .one,
+                .two,
+                .three {
+                    display: flex;
+                    gap: 20px;
+                    font-family: 'Marcellus', serif;
+
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: #f6edf0;
+            padding: 140px 100px;
+            margin: 20px 0;
+
+            @media(max-width:768px) {
+                width: 100%;
+                padding: 50px 30px;
+            }
+
+            label {
+                display: block;
+                font-weight: bold;
+            }
+
+            input {
+                width: 100%;
+                padding: 15px 30px;
+                border: 1px solid rgb(223, 215, 215);
+            }
+
+            .inputs {
+                display: flex;
+                gap: 10px;
+            }
+
+            .message {
+                textarea {
+                    width: 100%;
+                    padding: 15px 145px;
+                    border: 1px solid rgb(223, 215, 215);
+
+                    @media(max-width:768px) {
+                        padding: 15px 100px;
+                    }
+
+                    @media(max-width:475px) {
+                        padding: 15px 50px;
+                    }
+                }
+            }
+
+            .btn {
+                button {
+                    border: none;
+                    padding: 10px 30px;
+                    color: white;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
+
+
+// 
+
+.map {
+    width: 100%;
+
+    .map-content {
+        width: 100%;
+        // margin: 20px;
+        padding: 20px;
+
+        iframe {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+<div class="checkout">
+    <div class="checkout-content">
+        <div class="title">
+            <img src="../../assets/logo-regular.png" alt="">
+        </div>
+        <div class="sub">
+            <p>You are almost there</p>
+        </div>
+        <div class="content">
+            <p>Adipiscing bibendum id a condimentum risus nec sed malesuada ut etiam egestas.</p>
+        </div>
+        <div class="features">
+            <div class="ssl">
+                <img src="../../assets/security.png" alt="">
+                <p>SSL secured checkout</p>
+            </div>
+            <div class="support">
+                <img src="../../assets/support.png" alt="">
+                <p>24/7 support available</p>
+            </div>
+            <div class="payment">
+                <img src="../../assets/payment.png" alt="">
+                <p>Payment option</p>
+            </div>
+        </div>
+        <!--  -->
+
+        <div class="checkout-container">
+            <div class="popup-container" [ngClass]="{ 'show-popup': isPopupVisible }">
+                <div class="popup-content">
+                    <h2>Congratulations for your shopping!</h2>
+                    <p>Thank you for your order. Visit us again soon.</p>
+                    <button (click)="closePopup()" routerLink="/">Close</button>
+                </div>
+            </div>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="credit-card">Credit Card:</label>
+                    <input type="text" id="credit-card" name="credit-card" required>
+                </div>
+                <div class="form-group">
+                    <label for="exp-date">Expiration Date:</label>
+                    <input type="text" id="exp-date" name="exp-date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <a><button (click)="showPopup()" type="button">Place Order</button></a>
+            </form>
+            <div class="order-details">
+                <div class="one">
+                    <p>Product</p>
+                    <p>Subtotal</p>
+                </div>
+                <div class="two" *ngFor="let data of cartData">
+                    <div class="image">
+                        <img src={{data.img}} alt="">
+                        <p>{{data.name}}</p>
+                    </div>
+                    <div class="qua">
+                        <p>{{data.quantity}}</p>
+                    </div>
+                    <div class="price">
+                        <p>{{data.price1*data.quantity |currency}}</p>
+                    </div>
+                </div>
+                <div class="four">
+                    <p>Toatl</p>
+                    <p>{{price |currency}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

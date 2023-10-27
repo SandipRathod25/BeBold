@@ -1,0 +1,44 @@
+<div class="dialog">
+    <div class="dialog-content">
+        <div class="top">
+            <div class="first">
+                <div class="title">
+                    <p>Shopping Cart</p>
+                </div>
+                <div class="icon" [mat-dialog-close]="true">
+                    <img src="../../assets/close.png" alt="">
+                </div>
+            </div>
+            <div class="second" *ngFor="let data of cartData">
+                <div class="image">
+                    <img src={{data.img}}>
+                </div>
+                <div class="content">
+                    <div class="name">
+                        <p>{{data.name}}</p>
+                    </div>
+                    <div class="price">
+                        <p>{{data.quantity}} X {{data.price1 |currency}}</p>
+                    </div>
+                </div>
+                <div class="delete">
+                    <img (click)="deleteProduct(data.id)" src="../../assets/remove.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="text">
+                <div class="sub">
+                    <p>Subtotal:</p>
+                </div>
+                <div class="val">
+                    <p>{{price | currency}}</p>
+                </div>
+            </div>
+            <div class="btns">
+                <a routerLink="/cart" [mat-dialog-close]="true"><button>VIEW CART</button></a>
+                <a routerLink="/checkout" [mat-dialog-close]="true"><button>CHECKOUT</button></a>
+            </div>
+        </div>
+    </div>
+</div>

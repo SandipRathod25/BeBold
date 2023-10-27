@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.hero {
+    width: 100%;
+    font-family: 'Marcellus', serif;
+    margin-top: 56px;
+
+    .hero-content {
+        width: 100%;
+        padding: 0 20px;
+        position: relative;
+
+        .bg-image {
+            background-image: url(../../assets/new.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 86vh;
+        }
+
+        .content {
+            position: absolute;
+            top: 27%;
+            left: 8%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media(max-width:1023px) {
+                top: 10%;
+                gap: 0;
+            }
+
+            .top {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                color: white;
+
+                @media(max-width:1023px) {
+                    gap: 0;
+                }
+
+                .new {
+                    font-size: 13px;
+                }
+
+                .collection {
+                    font-size: 43px;
+                    max-width: 506px;
+                    line-height: 43px;
+
+                    @media(max-width:1023px) {
+                        max-width: 300px;
+                    }
+
+                    @media(max-width:768px) {
+                        font-size: 30px;
+                    }
+                }
+
+                .text {
+                    font-size: 16px;
+                    max-width: 506px;
+                    line-height: 27px;
+
+                    @media(max-width:1023px) {
+                        max-width: 250px;
+                    }
+                }
+            }
+
+            .bottom {
+                .btn {
+                    button {
+                        padding: 15px 30px;
+                        border: none;
+                        font-size: 15px;
+                        border-radius: 2px;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: #d4a6b6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

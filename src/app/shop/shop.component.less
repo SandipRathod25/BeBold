@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+.shop {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+    .shop-content {
+        max-width: 1440px;
+        margin: 50px auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .title1 {
+            font-size: 15px;
+            color: #777777;
+        }
+
+        .title2 {
+            font-size: 63px;
+
+            @media(max-width:768px) {
+                font-size: 43px;
+            }
+        }
+
+        .showing {
+            @media(max-width:425px) {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+            }
+
+            .first {
+                color: #5d5b5b;
+                font-size: 16px;
+            }
+
+            .second {
+                select {
+                    border: none;
+                    padding: 10px 10px;
+                    color: #5d5b5b;
+                    border: 1px solid rgb(201, 195, 195);
+                }
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+.trending {
+    width: 100%;
+    margin-top: 50px;
+    font-family: 'Marcellus', serif;
+
+    .loading {
+        display: flex;
+        gap: 10px;
+
+        button {
+            display: flex;
+            align-items: center;
+        }
+
+        .loadmore {
+            border: none;
+            padding: 10px 20px;
+            transition: all 0.3s;
+            font-size: 17px;
+
+            &:hover {
+                cursor: pointer;
+                background-color: white;
+                color: black;
+            }
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .trending-content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                position: relative;
+                width: 23.9%;
+
+                .checked {
+                    color: orange;
+                }
+
+                .top {
+
+                    .sale {
+                        position: absolute;
+                        top: 4%;
+                        left: 8%;
+                        background-color: white;
+                        padding: 5px 11px;
+                        border-radius: 30px;
+                        box-shadow: 0 2px 1px 0 rgb(208, 197, 197);
+                    }
+
+                    .cart {
+                        position: absolute;
+                        top: 4%;
+                        right: 8%;
+                        background-color: white;
+                        border-radius: 50%;
+                        padding: 4px 8px;
+                        box-shadow: 0 2px 1px 0 rgb(208, 197, 197);
+                        display: none;
+                    }
+
+                    &:hover {
+                        .cart {
+                            display: block;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .image {
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .bottom {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    .price {
+                        display: flex;
+                        gap: 5px;
+
+                        :nth-child(1) {
+                            opacity: 0.5;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+
+            @media(max-width:1024px) {
+                .card {
+                    width: 23.4% !important;
+                }
+            }
+
+            @media(max-width:768px) {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .card {
+                    width: 31% !important;
+                }
+            }
+
+            @media(max-width:611px) {
+
+                .card {
+                    width: 47% !important;
+                }
+            }
+
+            @media(max-width:375px) {
+                .card {
+                    width: 98% !important;
+                }
+            }
+        }
+    }
+}

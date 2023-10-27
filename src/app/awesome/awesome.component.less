@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+
+.awesome {
+    width: 100%;
+    font-family: 'Marcellus', serif;
+
+    .awesome-content {
+        width: 100%;
+        padding: 0 20px;
+
+        @media(max-width:1024px) {
+            padding-top: 100px;
+        }
+
+        @media(max-width:768px) {
+            padding-top: 30px;
+        }
+
+
+        .cards {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+
+            @media(max-width:768px) {
+                flex-wrap: wrap;
+            }
+
+
+            .card {
+                position: relative;
+                width: 100%;
+
+                .image {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+
+                        @media(max-width: 550px) {
+                            height: 400px;
+                        }
+                    }
+                }
+
+                .text {
+                    top: 50%;
+                    left: 30%;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    color: white;
+
+                    @media(max-width: 550px) {
+                        left: 40%;
+                    }
+
+                    .one {
+                        font-size: 13px;
+                    }
+
+                    .two {
+                        font-size: 43px;
+                        max-width: 260px;
+                        line-height: 43px;
+
+                        @media(max-width: 550px) {
+                            font-size: 33px;
+                            line-height: 33px;
+                        }
+                    }
+
+                    .three {
+                        font-size: 23px;
+                    }
+
+                    .btn {
+                        button {
+                            padding: 15px 30px;
+                            border: none;
+                            font-size: 15px;
+                            border-radius: 2px;
+                            font-weight: 500;
+
+                            &:hover {
+                                color: #d4a6b6;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

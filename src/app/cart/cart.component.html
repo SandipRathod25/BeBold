@@ -1,0 +1,59 @@
+<div class="cart">
+    <div class="cart-content">
+        <div class="title">
+            <h1>Cart</h1>
+        </div>
+        <div class="content">
+            <div class="tables">
+                <table border="1">
+                    <tr class="bga">
+                        <th>Details</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr class="con" *ngFor="let data of cartData">
+                        <td>
+                            <img (click)="deleteProduct(data.id)" class="cross" src="../../assets/remove.png" alt="">
+                            <img class="logo" src={{data.img}} alt="">
+                        </td>
+                        <td>{{data.name}}</td>
+                        <td>{{data.price1 | currency}}</td>
+                        <td>{{data.quantity}}</td>
+                        <td>{{ data.price1*data.quantity |currency}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="lower">
+                <div class="filed">
+                    <input type="text" placeholder="Coupon Code">
+                    <button>APPLY COUPON</button>
+                </div>
+                <div class="btns">
+                    <button>UPDATE CART</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <div class="top">
+                <div class="cart-title">
+                    <p>Cart Totals</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="sub">
+                    <p>Subtotal</p>
+                    <p>{{price | currency}}</p>
+                </div>
+                <div class="tot">
+                    <p>Total</p>
+                    <p>{{price | currency}}</p>
+                </div>
+                <div class="check">
+                    <a routerLink="/checkout"><button>PROCEED TO CHECKOUT</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+.navbar {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+
+    .navbar-content {
+        width: 100%;
+        padding: 0 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px auto;
+
+
+        .center {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            color: black;
+
+            @media(max-width:1023px) {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 15px;
+
+                &:hover {
+                    color: #d4a6b6;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .left {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .price {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                font-size: 17px;
+
+                @media(max-width:1023px) {
+                    display: none;
+                }
+            }
+
+            .profile {
+                @media(max-width:1023px) {
+                    display: none;
+                }
+
+                img {
+                    height: 25px;
+                }
+            }
+
+            .cart {
+                display: flex;
+                position: relative;
+
+                @media(max-width:1023px) {
+                    display: none;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .count {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    background-color: black;
+                    border-radius: 50%;
+                    color: white;
+                    width: 15px;
+                    height: 15px;
+                    padding: 8px;
+                    font-size: 13px;
+                    top: -30%;
+                    right: -50%;
+                }
+
+                img {
+                    width: 20px;
+                }
+            }
+
+            .menu {
+                display: none;
+
+                @media(max-width:1023px) {
+                    display: block;
+                }
+
+                img {
+                    height: 16px;
+                }
+            }
+        }
+    }
+
+    .fruit {
+        position: absolute;
+        top: 118%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        z-index: 1;
+        height: 100vh;
+        display: none;
+        color: black;
+
+        @media(max-width:1023px) {
+            display: block;
+            position: absolute;
+            top: 118%;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #f9f9f9;
+            z-index: 1;
+            height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+            border-bottom: 1px solid rgb(239, 234, 234);
+            padding: 12px 35px;
+        }
+    }
+}
